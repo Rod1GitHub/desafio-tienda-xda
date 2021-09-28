@@ -1,0 +1,88 @@
+body {background-color: violet;}
+
+/* mobile */
+@media only screen and (min-width:151px)  { body {background-color:lightgreen;} }
+/* tablet */
+@media only screen and (min-width:641px)  { body {background-color: lightseagreen;} }
+/* desktop */
+@media only screen and (min-width:1025px)  { body {background-color:lightcoral;} }
+
+/* 1 */
+.nav {
+    background-color: green;
+    height: 100px;
+}
+
+.nav__brand {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.nav__menu {
+    vertical-align: middle;
+    float: right;
+}
+
+
+/* 2 */
+.wrap {
+    background-color:blue;
+    position: relative;
+    width: 40%;
+    height:700px;
+    float: left;
+}
+.intro {
+    background-color:red;
+    width: auto;
+    overflow: auto;
+    position: relative;
+}
+
+.newsletter {
+    background-color:gray;
+    width: auto;
+    overflow: auto;
+    position: relative;
+}
+
+.newsletter__input {
+    background-color:pink;
+    display: inline-block;
+
+}
+
+.newsletter__vertical {
+    background-color:brown;
+    display: inline-block;
+
+}
+
+.newsletter__vertical--rotate {
+    background-color: yellow;
+    writing-mode: vertical-rl;
+    position: relative;
+    float:right;
+}
+
+/* 3 */
+.hero {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.hero__image {
+    background-image: url("../img/imagen1.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
