@@ -1,0 +1,33 @@
+/* layout/article */
+
+.hero {
+    float: right;
+}
+
+.hero__image {
+    background-image: url("../img/imagen1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+}
+
+.written {
+}
+
+.newsletter {
+    display: inline-block;
+
+}
+
+.newsletter__input {
+    display: inline-block;
+
+}
+
+.newsletter__vertical {
+    writing-mode: vertical-rl;
+    float: right;
+}
+

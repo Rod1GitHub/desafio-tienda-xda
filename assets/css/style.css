@@ -1,88 +1,498 @@
-body {background-color: violet;}
-
-/* mobile */
-@media only screen and (min-width:151px)  { body {background-color:lightgreen;} }
-/* tablet */
-@media only screen and (min-width:641px)  { body {background-color: lightseagreen;} }
-/* desktop */
-@media only screen and (min-width:1025px)  { body {background-color:lightcoral;} }
-
-/* 1 */
-.nav {
+/* abstracts/variables */
+/* Colors */
+/* Font Size */
+/* 50px */
+/* 30px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 14px */
+/* 12px */
+/* Font Family */
+/* Font weight */
+/* From Bootstrap 4.6
+Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    background-color: red;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background-color: blue;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
     background-color: green;
-    height: 100px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  body {
+    background-color: pink;
+  }
+}
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    background-color: purple;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* base/typography */
+body {
+  font-family: "Old Standard TT", serif;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.125em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.875em;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+/* layout/navigation */
+.nav {
+  background-color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+}
 .nav__brand {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  float: left;
+  text-align: center;
 }
-
+.nav__brand--center {
+  position: relative;
+  /* Center Vertical*/
+  top: 50%;
+  transform: translateY(-50%);
+  /* Center Horizontal*/
+  margin-left: auto;
+  margin-right: auto;
+}
 .nav__menu {
-    vertical-align: middle;
-    float: right;
+  float: right;
+}
+.nav__menu--center {
+  margin-top: 30px;
+}
+.nav__brand a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav__menu a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: #0c0910;
 }
 
-
-/* 2 */
-.wrap {
-    background-color:blue;
-    position: relative;
-    width: 40%;
-    height:700px;
-    float: left;
-}
-.intro {
-    background-color:red;
-    width: auto;
-    overflow: auto;
-    position: relative;
+/* Layout System - Using CSS Display, Float, Position */
+/* By R.Z */
+/* force box size */
+* {
+  box-sizing: border-box;
 }
 
-.newsletter {
-    background-color:gray;
-    width: auto;
-    overflow: auto;
-    position: relative;
+/*wrappers*/
+/* wrap level 1 */
+.container {
+  display: block;
+  width: 80%;
+  margin: auto;
 }
 
-.newsletter__input {
-    background-color:pink;
-    display: inline-block;
-
+/* wrap level 2 */
+.box {
+  display: inline-block;
+  width: 100%;
 }
 
-.newsletter__vertical {
-    background-color:brown;
-    display: inline-block;
-
+/* wrap level 3 */
+.row {
+  display: block;
 }
 
-.newsletter__vertical--rotate {
-    background-color: yellow;
-    writing-mode: vertical-rl;
-    position: relative;
-    float:right;
+/*position left and right*/
+.pos-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-/* 3 */
+.pos-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pos-fixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: inherit;
+}
+
+/* columns. It has position relative to use position absolute inside them. Clearfix hack at the end*/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/*clear fix hack to avoid collapsed div when using position in child under row*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* layout/article */
 .hero {
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-    float: left;
+  float: right;
 }
 
 .hero__image {
-    background-image: url("../img/imagen1.png");
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url("../img/imagen1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
 }
 
+.newsletter {
+  display: inline-block;
+}
 
+.newsletter__input {
+  display: inline-block;
+}
+
+.newsletter__vertical {
+  writing-mode: vertical-rl;
+  float: right;
+}
+
+.primary-button {
+  border: 1px solid #0c0910;
+  background-color: #ffffff;
+  color: #0c0910;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 4px 2px;
+  padding: 10px 25px;
+  font-weight: 700;
+}
+.primary-button--small {
+  font-size: 0.875em;
+  margin: 4px 2px;
+  padding: 7px 15px;
+  font-weight: 700;
+}
+.primary-button:hover {
+  border: 1px solid #a6a5a8;
+}
+.primary-button:focus {
+  border: 1px solid #a6a5a8;
+  color: #a6a5a8;
+}
+
+/* *{
+  box-sizing: border-box;
+} */
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ .collapse {
+  height: 170px;
+}
+input[type=checkbox]:checked ~ .collapse .iconPlus {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input[type=checkbox]:checked ~ .collapse .minus {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input[type=checkbox]:checked ~ .collapse ul {
+  /* opacity: 1; */
+}
+
+.collapse-menu {
+  float: right;
+}
+
+.collapse {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border: 5px solid black;
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto 10px;
+  padding: 10px 15px;
+  overflow: hidden;
+  cursor: pointer;
+  /* background: white; */
+  /* border-radius: 4px; */
+  /* box-shadow: 0 3px 2px 1px black; */
+}
+.collapse p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: orange;
+  font-size: 20px;
+}
+.collapse .iconPlus {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  width: 20px;
+}
+.collapse .iconPlus .plus {
+  display: block;
+  width: 3px;
+  height: 21px;
+  margin: 0 auto;
+  background: red;
+}
+.collapse .iconPlus .minus {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  top: 9px;
+  background: green;
+}
+.collapse .details {
+  display: block;
+  padding: 15px 0;
+  /* color: gray; */
+  /* font-size: 15px; */
+}
+.collapse .details a {
+  text-decoration: none;
+  color: inherit;
+  background-color: green;
+  line-height: 1em;
+  display: inline-block;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .collapse-menu {
+    background-color: orange;
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav__menu {
+    background-color: yellow;
+    display: none;
+  }
+}
+.container {
+  background-color: aqua;
+  border: 5px solid blue;
+}
+
+.box {
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.row {
+  background-color: violet;
+  border: 5px solid purple;
+}
+
+.pos-right {
+  background-color: darkgrey;
+  border: 1px solid black;
+}
+
+.pos-left {
+  background-color: darkgray;
+  border: 1px solid black;
+}
+
+.pos-fixed {
+  border: 5px solid black;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  background-color: pink;
+  border: 5px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

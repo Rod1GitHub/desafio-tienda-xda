@@ -1,0 +1,35 @@
+  .container {
+    background-color: aqua;
+    border: 5px solid blue;
+  }
+  
+  .box {
+    background-color: yellow;
+    border: 5px solid orange;
+  }
+  
+
+  .row {
+    background-color: violet;
+    border: 5px solid purple;
+  }
+  
+  .pos-right {
+    background-color:darkgrey;
+    border:1px solid black;
+  }
+  
+  .pos-left {
+    background-color:darkgray;
+    border:1px solid black;
+  } 
+  
+  .pos-fixed {
+    border:5px solid black;
+  }
+  
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    background-color: pink;
+    border: 5px solid red;
+  }
+  

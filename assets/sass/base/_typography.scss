@@ -1,0 +1,30 @@
+/* base/typography */
+
+body{
+font-family: $font-classic;
+font-family: $font-modern;
+}
+
+h1 {
+    font-family: $font-classic;
+    font-size: $xxx-large;
+    font-weight: $weight-bold;
+}
+
+h2 {
+    font-family: $font-classic;
+    font-size: $xx-large;
+    font-weight: $weight-bold;
+}
+    
+p {
+    font-family: $font-modern;
+    font-size: $medium;
+    font-weight: $weight-normal;
+}
+
+a {
+    font-family: $font-modern;
+    font-size: $large;
+    font-weight: $weight-bold;
+}

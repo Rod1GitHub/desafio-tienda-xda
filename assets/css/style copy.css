@@ -1,0 +1,81 @@
+/* mobile */
+@media only screen and (min-width:151px)  { body {background-color:lightgreen;} }
+/* tablet */
+@media only screen and (min-width:641px)  { body {background-color: lightseagreen;} }
+/* desktop */
+@media only screen and (min-width:1025px)  { body {background-color:lightcoral;} }
+
+.grid-container {
+    background-color:crimson;
+    width: 80%;
+    margin: auto;
+}
+
+.row-k {
+    background-color:darkorange;
+    float:left;
+}
+
+.nav {
+    background-color: green;
+    display: inline-block;
+}
+
+.nav__brand {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    float:left;
+}
+
+.nav__menu {
+    float: right;
+}
+
+.main {
+    background-color:chocolate;
+}
+
+.hero {
+    background-color: yellow;
+    float: right;
+}
+
+.hero__image {
+    background-image: url("../img/imagen1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+}
+
+.written {
+    background-color:red;
+    width: auto;
+    overflow: auto;
+}
+
+.newsletter {
+    background-color:gray;
+    width: auto;
+    overflow: auto;
+    display: inline-block;
+}
+
+.newsletter__input {
+    background-color:pink;
+    width: auto;
+    overflow: auto;
+    display: inline-block;
+}
+
+.newsletter__vertical {
+    background-color:brown;
+    width: auto;
+    overflow: auto;
+    display: inline-block;
+    writing-mode: vertical-rl;
+}
+

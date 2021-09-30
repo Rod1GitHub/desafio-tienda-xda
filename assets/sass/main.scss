@@ -1,40 +1,39 @@
 // main.scss # Manifest File
 
-//@import './abstracts/variables';
+@import './abstracts/variables';
 //@import './abstracts/functions';
-//@import './abstracts/mixins';
+@import './abstracts/mixins';
 //@import './abstracts/placeholders';
 //
 //@import './vendors/bootstrap-5.1.1/scss/bootstrap.scss';
 //
-//@import './base/reset';
-//@import './base/typography';
+@import './base/reset';
+@import './base/typography';
 //@import './base/base';
 //@import './base/animations;
 //
-//@import './layout/navigation';
-//@import './layout/grid';
+@import './layout/navigation';
+@import './layout/grid';
 //@import './layout/header';
-//@import './layout/article';
+@import './layout/article';
 //@import './layout/footer';
 //@import './layout/sidebar';
 //@import './layout/forms';
-//@import './layout/navigation';
-//@import './layout/media-query';
 
 //
 //@import './components/media';
 //@import './components/thumbnails';
-//@import './components/buttons';
+@import './components/buttons';
 //@import './components/pagination';
 //@import './components/carousel';
 //@import './components/cover';
 //@import './components/dropdown';
+@import './components/collapse-menu';
+
 //
-//@import './pages/home';
+@import './pages/home';
 //@import './pages/contact';
 //
 //@import './themes/theme';
 //@import './themes/admin';
-
-//@import './themes/admin';
+@import './themes/show-grid';

@@ -1,0 +1,111 @@
+//MIXINS
+@mixin animate{
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* *{
+  box-sizing: border-box;
+} */
+
+
+//input checkbox
+input[type=checkbox] {    
+  display: none;
+  //checkbox in checked state
+  &:checked {
+    ~ .collapse {
+      height: 170px;
+      .iconPlus {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      .minus {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      ul {
+        /* opacity: 1; */
+      }
+    }
+  }
+}
+
+.collapse-menu {
+ float: right;
+}
+
+//collapse element
+.collapse {
+  @include animate;
+  border: 5px solid black;
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto 10px;
+  padding: 10px 15px;
+  overflow: hidden;
+  cursor:pointer;
+  /* background: white; */
+  /* border-radius: 4px; */
+  /* box-shadow: 0 3px 2px 1px black; */
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+    color:orange;
+    font-size: 20px;
+  }
+  .iconPlus {
+    @include animate;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    width: 20px;
+    .plus {
+      display: block;
+      width: 3px;
+      height: 21px;
+      margin: 0 auto;
+      background: red;
+    }
+    .minus {
+      @include animate;
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 3px;
+      top: 9px;
+      background: green;
+    }
+  }
+  .details {
+    display:block;
+    padding:15px 0;
+    /* color: gray; */
+    /* font-size: 15px; */
+  }
+  .details a {
+    text-decoration: none;
+    color: inherit;
+    background-color: green;
+    line-height: 1em;
+    display: inline-block;
+    padding: 5px;
+  }
+}
