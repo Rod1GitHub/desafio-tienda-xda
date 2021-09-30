@@ -19,6 +19,8 @@
 
 <div class="container">
 
+    
+    
 
     <nav class="row nav">
 
@@ -36,10 +38,10 @@
                 <a href="https://github.com/Rod1GitHub/desafio-tienda-xda" target="_blank">GitHub</a>
             </div>
 
-            <div class="collapse-menu">
+            <div class="nav__collapsable-menu">
                 <input type="checkbox" id="collapse1Rod">
                     <label class="collapse" for="collapse1Rod">
-                    <p></p>
+                        <p><i class="my-icon"></i></p>
                         <div class="iconPlus">
                             <span class="plus"></span>
                             <span class="minus"></span>
@@ -49,7 +51,7 @@
                             <a href="#">Hombre</a><br>
                             <a href="#">Accesorios</a><br>
                             <a href="#">Blog</a><br>
-                            <a href="https://github.com/Rod1GitHub/desafio-tienda-xda" target="_blank">GitHub</a><br>
+                            <a class="nav__menu--highlight" href="https://github.com/Rod1GitHub/desafio-tienda-xda" target="_blank">GitHub</a><br>
                         </div>
                     </label>
             </div>
@@ -60,6 +62,7 @@
 
 
     <article class="row">
+
         <div class="col-7 hero">
             <div class="hero__image"></div>
         </div>
@@ -69,15 +72,17 @@
                     <h1 class="intro__title">LOREM IPSUM AD VALOREM</h1>
                     <p class="intro__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptates cumque ex neque illo, in, ipsam eaque dolor minima praesentium aspernatur architecto! Doloribus fugiat aut consectetur consequuntur, culpa aperiam quod.</p>
                     <button class="primary-button">Ir a tienda</button>
-                    <button class="primary-button primary-button--small">Ir a tienda</button>
                 </div>
          
                 <section class="row newsletter">
-                    <div class="col-11 newsletter__input ">
-                        <h2>Newsletter</h2>
+
+                    <div class="newsletter__input">
+                        <h3>Newsletter</h3>
                         <label for="your-email">Correo Electrónico</label>
+                        <br>
                         <input type="email" id="your-email" placeholder="Ingresa tu correo electrónico">
                     </div>
+
                     <div class="newsletter__vertical col-1">
                         <p>Suscribir</p>
                     </div>
@@ -85,7 +90,9 @@
         </div>
     </article>
     <footer class="row">
-        Holas
+        <p>XDA</p>
+        <p>All rights reserved</p>
+        <p>2021</p>
     </footer>
 </div>
 

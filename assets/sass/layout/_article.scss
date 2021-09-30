@@ -1,33 +1,65 @@
 /* layout/article */
 
-.hero {
-    float: right;
+article {
+    position: relative;
 }
 
-.hero__image {
-    background-image: url("../img/imagen1.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 80vh;
+.hero {
+    float: right;
+
+    &__image {
+        background-image: url("../img/imagen1.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 80vh;
+    }
 }
 
 .written {
+    position: absolute;
+    bottom:0;
+
+} 
+
+.intro {
+    padding: 10px;
+
+    &__text {
+        color: $granite-gray;
+    }
 }
 
 .newsletter {
     display: inline-block;
+    text-align: left;
+    width: 100%;
+    background-color: $smoky-black;
 
+    &__input {
+        display: inline-block;
+        color: $white;
+        padding: 10px 15px 15px 15px;
+    }
+    
+    &__vertical {
+        writing-mode: vertical-rl;
+        float: right;
+        background-color: $white;
+        height: 120px;
+        width: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-right: 6px;
+    }
+    
+    &__vertical > p {
+        font-family: $font-classic;
+        font-weight: $weight-bold;
+
+    }
+    
 }
 
-.newsletter__input {
-    display: inline-block;
-
-}
-
-.newsletter__vertical {
-    writing-mode: vertical-rl;
-    float: right;
-}
 

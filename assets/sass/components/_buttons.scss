@@ -1,3 +1,5 @@
+/* component/buttons */
+
 .primary-button {
     border: 1px solid $smoky-black;
     background-color: $white;
@@ -8,17 +10,10 @@
     cursor: pointer;
 
     font-size: $medium;
-    margin: 4px 2px;
-    padding: 10px 25px;
+    margin: 15px;
+    padding: 15px 20px;
     font-weight: 700;
     
-    &--small {
-        font-size: $small;
-        margin: 4px 2px;
-        padding: 7px 15px;
-        font-weight: 700;
-        
-    }
 
     &:hover {
         border: 1px solid $quick-silver;

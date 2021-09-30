@@ -16,6 +16,20 @@ h2 {
     font-size: $xx-large;
     font-weight: $weight-bold;
 }
+
+h3 {
+    font-family: $font-classic;
+    font-size: $x-large;
+    font-weight: $weight-bold;
+    padding:5px;
+}
+
+label {
+    font-family: $font-classic;
+    font-size: $x-small;
+    font-weight: $weight-bold;
+    padding: 5px;;
+}
     
 p {
     font-family: $font-modern;

@@ -16,7 +16,7 @@
 @import './layout/grid';
 //@import './layout/header';
 @import './layout/article';
-//@import './layout/footer';
+@import './layout/footer';
 //@import './layout/sidebar';
 //@import './layout/forms';
 
@@ -28,7 +28,8 @@
 //@import './components/carousel';
 //@import './components/cover';
 //@import './components/dropdown';
-@import './components/collapse-menu';
+@import './components/collapsable-menu';
+@import './components/inputs';
 
 //
 @import './pages/home';
@@ -36,4 +37,4 @@
 //
 //@import './themes/theme';
 //@import './themes/admin';
-@import './themes/show-grid';
+//@import './themes/show-grid';

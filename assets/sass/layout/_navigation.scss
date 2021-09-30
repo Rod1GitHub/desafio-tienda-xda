@@ -29,8 +29,10 @@
 
     &__menu--center {
         margin-top: 30px;
-
         }
+    &__menu--highlight {
+            background-color: yellow;
+            }
 
     &__brand a {
         text-decoration: none;
